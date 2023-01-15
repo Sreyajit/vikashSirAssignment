@@ -237,7 +237,7 @@ h1{
   font-size: 3em;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.gallery{
+.gallery, .skills{
   margin: 0 auto;
   width: 80%;
   display: flex;
@@ -265,10 +265,11 @@ h1{
   margin: 0 auto;
   box-sizing: border-box;
   display: flex;
- width: 80%;
- justify-content: space-evenly;
- align-items: center;
- gap: 10px;
+  flex-direction: column;
+  /* flex-wrap:wrap; */
+  width: 80%;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .Information>img{
   height: 20em;
@@ -284,4 +285,46 @@ font-size: 1.5rem;
 display: flex;
 width:50%;
 flex-wrap: wrap;
+}
+.skill{
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20em;
+  border-radius: 10%;
+  box-shadow: 10px 10px 20px black;
+  transition: background-color 0.5s ease-in-out,
+                width 0.5s ease-in-out,
+                height 0.5s ease-in-out,
+                box-shadow 0.5s ease-in-out;
+}
+.skill:hover{
+  width: 19.9em;
+  height:29.9em;
+  box-shadow: 0px 0px 20px white;
+}
+.skillImage{
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-radius: 10% 10% 0% 0%;
+  object-fit:cover;
+}
+.skill>#button{
+  height: 10%;
+  width: 45%;
+}
+h2{
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.skillBody{
+  display:flex;
+  text-align: center;
+  width: 100%;
 }
